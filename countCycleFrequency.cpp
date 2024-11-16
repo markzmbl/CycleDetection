@@ -16,17 +16,17 @@
 using namespace std;
 typedef string nodeid;
 
-typedef long time;
+typedef long time64;
 
 typedef set<nodeid> node_set;
-typedef map<time, node_set> time_group;
+typedef map<time64, node_set> time_group;
 typedef time_group distance_summary[100];
 
 void findWithLength(std::string input, std::string output, int window,bool timeInMsec,int cleanUpLimit,int cyclelenght) {
     std::vector<std::string> templine;
     map<nodeid, distance_summary> completeSummary;
     std:: map<nodeid, distance_summary> ::iterator it;
-    std::map<time, node_set>::iterator itTimedSet;
+    std::map<time64, node_set>::iterator itTimedSet;
     set<string> ::iterator it_impnode;
     set<std::string> rootNodeStime;
     ifstream infile(input.c_str());

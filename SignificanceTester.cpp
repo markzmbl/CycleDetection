@@ -10,7 +10,7 @@
 #include "Split.h"
 #include <set>
 #include <iostream>
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
 
 using namespace std;
 std::map<std::string, set<int>> data;

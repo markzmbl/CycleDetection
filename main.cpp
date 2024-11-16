@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
         TCLAP::ValueArg<bool> isCompressed("z", "isCompressed", "the root node is compressed", false, false, "bool");
         TCLAP::ValueArg<bool> is_candidates_provided("c", "is_candidates_provided", "candidate list is provided", false,
                                                      true, "bool");
-        TCLAP::ValueArg<int> cycle("l", "cycleLenght", "cycle lenght", false, 80, "int");
+        TCLAP::ValueArg<int> cycle("l", "cycleLength", "cycle lenght", false, 80, "i nt");
         TCLAP::ValueArg<bool> use_bundle("b", "use_bundle", "candidate list is provided", false,
                                          false, "bool");
         cmd.add(inputGraphArg);
